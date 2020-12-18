@@ -70,17 +70,9 @@ function App() {
     audio.play();
   };
 
-  const toggle = () => setMousedClicked(!mouseClicked);
   useEffect(() => {
-    mouseClicked ? audio.play() : audio.pause();
+    mouseClicked && currentNote != null ? audio.play() : audio.pause();
   }, [mouseClicked]);
-
-  useEffect(() => {
-    audio.addEventListener("ended", () => setMousedClicked(false));
-    return () => {
-      audio.removeEventListener("ended", () => setMousedClicked(false));
-    };
-  }, [mouseClicked, toggle]);
 
   const handleClick = (e) => {
     setCurrentNote(e.currentTarget.value);
@@ -105,7 +97,7 @@ function App() {
     console.log(e.currentTarget.value);
     console.log(e._reactName);
     setMousedClicked(false);
-    setCurrentNote("");
+    setCurrentNote(null);
     let playPromise = audio.pause();
     if (playPromise !== undefined) {
       playPromise
