@@ -6,9 +6,11 @@ const Black = styled.button`
   height: 230px;
   background: black;
   border: solid black 1px;
+  border-radius: 10px;
   position: absolute;
-  margin: 1px;
+  margin: 10px;
   margin-left: -20px;
+  cursor: pointer;
   :active {
     background: #333;
   }
@@ -22,8 +24,12 @@ const White = styled.button`
   height: 500px;
   background: white;
   border: solid black 1px;
-  box-shadow: 2px 5px;
+  -moz-box-shadow: inset 0 0 1px #000000;
+  -webkit-box-shadow: inset 0 0 1px #000000;
+  box-shadow: inset 0 0 1px #000000;
   margin: 1px;
+  border-radius: 10px;
+  cursor: pointer;
   margin-left: "-20px";
   box-sizing: border-box;
   :active {

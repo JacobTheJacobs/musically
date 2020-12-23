@@ -42,6 +42,7 @@ import Ab7 from "./piano/Ab7.mp3";
 import Bb7 from "./piano/Bb7.mp3";
 import B7 from "./piano/B7.mp3";
 import C8 from "./piano/C8.mp3";
+import Guitar from "./components/Guitar/Guitar";
 
 function App() {
   const [mouseClicked, setMousedClicked] = useState(false);
@@ -231,12 +232,15 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Octave
-        notes={NoteType}
-        clickHandler={handleClick}
-        hoverHandler={handleHover}
-      />
+    <div className="body">
+      <div className="App">
+        <Octave
+          notes={NoteType}
+          clickHandler={handleClick}
+          hoverHandler={handleHover}
+        />
+      </div>{" "}
+      <Guitar />
     </div>
   );
 }

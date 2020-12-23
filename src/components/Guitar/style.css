@@ -1,0 +1,115 @@
+div#lutemain1 {
+  vertical-align: middle;
+  margin-top: -50px;
+}
+div#lutelines {
+  display: inline-block;
+  height: 100%;
+  cursor: pointer;
+  margin-top: 500px;
+  transform: rotate(90deg);
+}
+
+div#E2 {
+  /* Each string is one div tag */
+  width: 5px; /* string width */
+  background-color: #ffffff; /* string color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left;
+  margin-left: 30px;
+}
+
+div#B2 {
+  width: 4px;
+  background-color: #ffffff;
+  height: 100%;
+  float: left;
+  margin-left: 30px;
+}
+
+div#G4 {
+  width: 3px;
+  background-color: #ffffff;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+div#D4 {
+  width: 2px;
+  background-color: #ffffff;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+div#Ab3 {
+  width: 2px;
+  background-color: #ffffff;
+  height: 100%;
+  float: left;
+  margin-left: 30px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+div#Eb4 {
+  width: 1px;
+  background-color: #ffffff;
+  height: 100%;
+  float: left;
+
+  cursor: pointer;
+}
+
+div#E2:hover {
+  background-color: #803d1d;
+  transform: scale(2.2);
+}
+
+div#B2:hover {
+  background-color: #803d1d;
+  transform: scale(2.2);
+}
+
+div#G4:hover {
+  background-color: #803d1d;
+  transform: scale(2.2);
+}
+
+div#D4:hover {
+  background-color: #803d1d;
+  transform: scale(2.2);
+}
+
+div#Ab3:hover {
+  background-color: #803d1d;
+  transform: scale(2.2);
+}
+div#Eb4:hover {
+  background-color: #803d1d;
+  transform: scale(2.2);
+}
+
+div#guitarcircle {
+  width: 280px;
+  height: 280px;
+  background: #000000;
+  border: 8px solid #b3b2b0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: -295px;
+}
+
+div#lutecircle {
+  width: 310px;
+  height: 310px;
+  background: #eecd62;
+  border: 8px solid #985339;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: -500px;
+}

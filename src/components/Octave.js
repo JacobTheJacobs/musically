@@ -8,18 +8,9 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 0px;
-
   margin: auto;
   font-family: "sans-serif";
   text-align: center;
-
-  @media ${device.laptop} {
-    max-width: 1700px;
-  }
-
-  @media ${device.desktop} {
-    max-width: 1700px;
-  }
 `;
 
 const hasWindow = typeof window !== "undefined";
@@ -66,7 +57,7 @@ const Octave = ({ notes, clickHandler, hoverHandler }) => {
         </div>
       ) : width >= 884 && width <= 1500 ? (
         <div>
-          {notes.slice(0, 25).map((element) => (
+          {notes.slice(0, 24).map((element) => (
             <Note
               key={element.note}
               color={element.color}
@@ -102,7 +93,7 @@ const Octave = ({ notes, clickHandler, hoverHandler }) => {
         </div>
       ) : (
         <div>
-          {notes.slice(0, 5).map((element) => (
+          {notes.slice(0, 6).map((element) => (
             <Note
               key={element.note}
               color={element.color}

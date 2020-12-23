@@ -1,38 +1,26 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   text-align: center;
-}
+  background-image: url("https://previews.123rf.com/images/fighterfrancevna/fighterfrancevna1603/fighterfrancevna160300017/53392555-bright-pattern-80-s-background-checkered-bumage-abstraktne-geometric-shapes-illustration-for-hipster.jpg");
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+  height: 100vh;
 }
